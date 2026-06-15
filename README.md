@@ -253,4 +253,3 @@ launchctl load ~/Library/LaunchAgents/com.mimicbot.plist
 MIT — use it, fork it, make it yours.
 
 Built by [@helloguis](https://github.com/helloguis).
-
