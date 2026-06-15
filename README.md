@@ -68,8 +68,8 @@ Save the file. MimicBot loads it automatically on startup via `python-dotenv`.
 
 ```powershell
 # Clone the repo
-git clone https://github.com/helloguis/mimic-bot.git
-cd mimic-bot
+git clone https://github.com/helloguis/mimicbot.git
+cd mimicbot
 
 # Create and activate a virtual environment
 python -m venv .venv
@@ -90,8 +90,8 @@ python bot.py
 
 ```bash
 # Clone the repo
-git clone https://github.com/helloguis/mimic-bot.git
-cd mimic-bot
+git clone https://github.com/helloguis/mimicbot.git
+cd mimicbot
 
 # Create and activate a virtual environment
 python3 -m venv .venv
@@ -112,8 +112,8 @@ python bot.py
 
 ```bash
 # Clone the repo
-git clone https://github.com/helloguis/mimic-bot.git
-cd mimic-bot
+git clone https://github.com/helloguis/mimicbot.git
+cd mimicbot
 
 # Create and activate a virtual environment
 python3 -m venv .venv
@@ -163,8 +163,8 @@ After=network.target
 [Service]
 Type=simple
 User=yourusername
-WorkingDirectory=/home/yourusername/mimic-bot
-ExecStart=/home/yourusername/mimic-bot/.venv/bin/python bot.py
+WorkingDirectory=/home/yourusername/mimicbot
+ExecStart=/home/yourusername/mimicbot/.venv/bin/python bot.py
 Restart=always
 RestartSec=10
 
@@ -186,9 +186,9 @@ sudo systemctl status mimicbot
 1. Open **Task Scheduler** → **Create Task**.
 2. Trigger: **At startup** (or **At log on**).
 3. Action: **Start a program**
-   - Program: `C:\path\to\mimic-bot\.venv\Scripts\python.exe`
+   - Program: `C:\path\to\mimicbot\.venv\Scripts\python.exe`
    - Arguments: `bot.py`
-   - Start in: `C:\path\to\mimic-bot`
+   - Start in: `C:\path\to\mimicbot`
 4. Enable **Run whether user is logged on or not** if you want it always on.
 
 ### macOS — launchd
@@ -204,11 +204,11 @@ Create `~/Library/LaunchAgents/com.mimicbot.plist`:
     <string>com.mimicbot</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/yourusername/mimic-bot/.venv/bin/python</string>
-        <string>/Users/yourusername/mimic-bot/bot.py</string>
+        <string>/Users/yourusername/mimicbot/.venv/bin/python</string>
+        <string>/Users/yourusername/mimicbot/bot.py</string>
     </array>
     <key>WorkingDirectory</key>
-    <string>/Users/yourusername/mimic-bot</string>
+    <string>/Users/yourusername/mimicbot</string>
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
