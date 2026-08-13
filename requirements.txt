@@ -1,0 +1,4 @@
+# MimicBot requires py-cord (Pycord). Do NOT install discord.py — they conflict.
+py-cord>=2.6.0,<3
+aiohttp>=3.9.0,<4
+python-dotenv>=1.0.0,<2
